@@ -8,17 +8,17 @@ class Solution {
         boolean vis[] = new boolean[V + 1];          // visited (mark as 1) or not visited (mark as 0) 
         Queue<Integer> q = new LinkedList<>();       // Data structure we need
                 
-                q.add(0);
-                vis[0] = true;
+                q.add(0);                            // initial point, start with 0 or any given index
+                vis[0] = true;                       // mark it as visited
                 
                 while(!q.isEmpty()){
                     Integer node = q.poll();
                     bfs.add(node);
                     
-                    for(Integer it : adj.get(node)){
-                        if(vis[it] == false){
+                    for(Integer it : adj.get(node)){  // add all adjacent vertices of current vertex into the queue
+                        if(vis[it] == false){         // iff not visited
                             q.add(it);
-                            vis[it] = true;
+                            vis[it] = true;           // add to queue and mark it as visited
                         }
                     }
                 }
