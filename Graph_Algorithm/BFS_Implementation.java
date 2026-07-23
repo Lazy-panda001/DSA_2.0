@@ -1,10 +1,12 @@
+// Link : https://leetcode.com/discuss/post/2360573/become-master-in-graph-by-hi-malik-o4xy/
+
 class Solution {
     // Function to return Breadth First Traversal of given graph.
     public ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
         // Code here
-        ArrayList<Integer> bfs = new ArrayList<>();
-        boolean vis[] = new boolean[V + 1];
-        Queue<Integer> q = new LinkedList<>();
+        ArrayList<Integer> bfs = new ArrayList<>();  // store bfs of a graph
+        boolean vis[] = new boolean[V + 1];          // visited (mark as 1) or not visited (mark as 0) 
+        Queue<Integer> q = new LinkedList<>();       // Data structure we need
                 
                 q.add(0);
                 vis[0] = true;
@@ -23,3 +25,4 @@ class Solution {
         return bfs;
     }
 }
+
