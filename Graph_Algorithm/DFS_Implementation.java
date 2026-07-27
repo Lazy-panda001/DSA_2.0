@@ -2,8 +2,8 @@ class Solution {
     // Function to return a list containing the DFS traversal of the graph.
     public ArrayList<Integer> dfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
         // Code here
-        ArrayList<Integer> dfsStore = new ArrayList<>();
-        boolean vis[] = new boolean[V + 1];
+        ArrayList<Integer> dfsStore = new ArrayList<>();     // store dfs result, 
+        boolean vis[] = new boolean[V + 1];                  // visited array vectoe<bool> visited(n, false);
         
         for(int i = 0; i < V; i++){
             if(vis[i] == false){
