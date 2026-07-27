@@ -1,3 +1,4 @@
+// For DFS, you don't need a Pair class. Instead, you pass the current node and its parent as parameters to the recursive function.
 import java.util.*;
 
 class Solution {
