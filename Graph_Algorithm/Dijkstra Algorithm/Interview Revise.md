@@ -1,4 +1,5 @@
 # Dijkstra Algorithm - Revision Cheat Sheet
+https://chatgpt.com/s/t_6a6f5d0259008191926b358d51f14eb5
 
 This is the sequence you should remember during interviews and coding rounds.
 
@@ -291,3 +292,12 @@ Repeat
 ```
 
 This 9-step sequence is enough to reconstruct Dijkstra's algorithm from memory in almost any interview.
+
+# One-Line Memory Trick
+Unweighted Shortest Path  → BFS
+
+Weighted (Positive)       → Dijkstra
+
+Weighted (Negative)       → Bellman-Ford
+
+All-Pairs Shortest Path   → Floyd-Warshall
